@@ -1,0 +1,227 @@
+%Example of use of oxmathproblems latex class for problem sheets
+\documentclass{oxmathproblems}
+
+%(un)comment this line to enable/disable output of any solutions in the file
+%\printanswers
+
+%define the page header/title info
+\oxfordterm{Macroeconomics II}
+\course{Práctica 3 - Suaznabar Canaviri Peter Lando}
+\sheetnumber{1}
+\sheettitle{Crecimiento Económico} %can leave out if no title per sheet
+
+% add further contact details to footer if desired,
+%e.g. email address, or name and email address
+\contact{Universidad Mayor de San Andrés - Carrera de Economía}
+
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\usepackage{tikz}
+\begin{document}
+\begin{questions}
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\miquestion
+\begin{parts}
+  \part 
+  Considere el modelo de Harrod y Domar con las siguientes ecuaciones:
+  \[{S_t} = {I_t}\]
+  \[{I_t} = {K_{t + 1}} - {K_t} + \delta {K_t}\]
+  \[\theta  = \frac{{{K_t}}}{{{Y_t}}}\]
+  \begin{subparts}
+     \subpart
+    Encuentre la tasa de crecimiento del capital y la tasa de crecimiento garantizada ¿Qué variable determina el crecimiento según este modelo?
+    \paragraph{Resp.}
+    El ahorro determina el crecimiento de esta economía es decir la tasa de ahorro que es exógena, llevamos todo a términos per cápita: $$s_t=i_t$$ también $$i_t=\Delta K_t / N_t + \delta k_t$$  
+    El aporte del capital a la producción:
+    $$PMeK = \theta = K_t / Y_t$$
+    Donde:
+    $$S_t = s*Y_t$$
+    Inversión Bruta
+    $$I=\Delta K + \delta K$$
+    Inversión Neta
+    $$\Delta K = I - \delta K$$
+    Reemplazamos la identidad ahorro - inversión en:
+    $$\Delta K = s*Y - \delta K$$
+    Dividimos entre K la ecuación
+    $$\dfrac{\Delta K}{K}  = s*\dfrac{Y}{K} - \delta $$
+    La relación capital producto es $\theta = \dfrac{Y}{K}$
+    $$\dfrac{\Delta K}{K}  = \dfrac{s}{\theta} - \delta $$
+  \subpart
+  Levante el supuesto de la inexistencia de una tasa de depreciación. Encuentre la tasa de crecimiento del capital y la tasa de crecimiento garantizada.
+  $$\delta = 0$$
+  $$g_K = \dfrac{\Delta K}{K}  = \dfrac{s}{\theta} $$
+  \subpart
+  Introduzca a la población. Encuentre la tasa de crecimiento del capital per – cápita y la tasa de crecimiento garantizada per – cápita.
+  Donde $n$ es la tasa de crecimiento poblacional  $$\frac{{\dot L}}{L} = n$$:
+  $$g_K = \dfrac{\Delta K}{K}  = \dfrac{s}{\theta} - n$$
+    \end{subparts}
+\end{parts}
+
+\begin{solution}
+                                     
+\end{solution}
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\miquestion
+\begin{parts}
+  \part Considere las siguientes ecuaciones para el modelo de Solow:
+  \[{Y_t} = AK_t^\alpha L_t^{1 - \alpha }\]
+  \[{I_t} = {{\dot K}_t} + \delta {K_t}\]  
+  \begin{subparts}
+  \subpart
+    Verifique que esta función de producción cumple con las propiedades de una función de producción neoclásica.
+    %_______________________________________________
+    \\
+    \textbf{Productividades marginales de los factores positivos:}
+    
+    \[\frac{{\partial Y}}{{\partial K}} = \alpha A{K^{\alpha  - 1}}{L^{1 - \alpha }} \to \frac{{\partial Y}}{{\partial K}} = \alpha A{k^{\alpha  - 1}} > 0\]
+    
+     \[\frac{{\partial Y}}{{\partial L}} = (1 - \alpha )A{K^\alpha }{L^{ - \alpha }} \to \frac{{\partial Y}}{{\partial L}} = (1 - \alpha )A{k^\alpha } > 0\]
+    %______________________________________________
+    \textbf{Productividades marginales de los factores decrecientes:}
+    
+    \[\frac{{{\partial ^2}Y}}{{\partial {K^2}}} =  - \alpha *(1 - \alpha )A{K^{\alpha  - 2}}{L^{1 - \alpha }} < 0 \to \frac{{{\partial ^2}Y}}{{\partial {K^2}}} =  - \alpha *(1 - \alpha )\frac{Y}{{{K^2}}} < 0\]
+    
+    \[\frac{{{\partial ^2}Y}}{{\partial {L^2}}} =  - \alpha *(1 - \alpha )A{K^\alpha }{L^{ - \alpha  - 1}} < 0 \to \frac{{{\partial ^2}Y}}{{\partial {L^2}}} =  - \alpha *(1 - \alpha )\frac{Y}{{{L^2}}} < 0\]
+    
+    %______________________________________________
+    \textbf{Condiciones de Inada:}
+   
+   \[\mathop {\lim }\limits_{k \to 0} ( - \alpha *(1 - \alpha )\frac{Y}{{{K^2}}}) =  - \infty \]
+   
+   \[\mathop {\lim }\limits_{k \to \infty } ( - \alpha *(1 - \alpha )\frac{Y}{{{K^2}}}) = 0\]
+   
+  \subpart  
+    Encuentre la Elasticidad Producto – Capital per cápita.
+    \textbf{Resp.} La eslaticidad producto - capital per cápita:
+    $$\dfrac{Y_t}{L_t} = y_t = A*K_t^\alpha L_t^{1-\alpha} // \dfrac{1}{L_t}$$
+    
+    $$y_t = A*\dfrac{K_t^\alpha}{L_t^{\alpha}}$$
+    
+    $$y_t = A*k_t^\alpha$$
+    
+    $$\eta_{y_t,k_t} = $$
+\subpart    
+    Encuentre la función de producción per – cápita, acumulación de capital per cápita, la tasa de crecimiento del capital per Cápita, la tasa de crecimiento del producto per cápita (Convergencia absoluta). Realice gráficos.
+
+
+    %_________________________________________________
+    %*************************************************
+    \begin{tikzpicture}
+    %Axis
+    \draw[thick,<->] (0,10) node[above]{Depreciación, Ahorro}--(0,0)--(10,0) node[right]{$k$}; 
+    \node [below left] at (0,0) [$0$]; 
+    %Line 
+    \draw(0,0)--(9,9) node[right]{$\delta k$}; 
+    %Curve 
+    \draw(0,0) ..controls (1,5) and (5,6) .. (10,7) node[right]{$sf(k)$};
+    \end{tikzpicture}
+    %*************************************************
+    %_________________________________________________
+
+  \end{subparts}
+\end{parts}
+
+
+\begin{solution}
+  
+\end{solution}
+
+
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\miquestion
+\begin{parts}
+  \part El modelo de Solow viene dado por las siguientes ecuaciones:
+   \[{Y_t} = AK_t^\alpha L_t^{1 - \alpha }\]
+  \[{I_t} = {{\dot K}_t} + \delta {K_t}\] 
+  \begin{subparts}
+    \subpart Si el progreso tecnológico es 2, la Elasticidad Producto – Capital per – cápita es igual a 0,4; la tasa de depreciación 0,08; la tasa de ahorro 0,25 y la tasa de crecimiento de la población 0,04. Encontrar el nivel de capital per – cápita de estado estacionario, la producción per – cápita. Grafique los resultados.
+    \subpart 
+    Encuentre el capital per – cápita de oro, compare el resultado con el obtenido en el inciso i), apóyese con un gráfico.
+    \subpart 
+    Si la tasa de ahorro aumenta hasta 0,3 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, la tasa de crecimiento del capital per – cápita, la tasa de crecimiento del producto per – cápita? Grafique y discuta los resultados.
+    \subpart 
+    Si la tasa de depreciación cae hasta 0,6 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, la tasa de crecimiento del capital per – cápita y la tasa de crecimiento del producto per – cápita? Grafique los resultados
+    \subpart 
+    ¿Qué valor debería tomar la tasa de ahorro para que el nivel de capital per – cápita sea igual capital per – cápita de oro?
+  \end{subparts}
+\end{parts}
+
+\begin{solution}
+  The solution would go here
+\end{solution}
+
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\miquestion
+\begin{parts}
+  \part El modelo Solow – Swan se caracteriza por las siguientes ecuaciones:
+    \[{Y_t} = AK_t^\alpha L_t^{1 - \alpha }\]
+    \[ {{\dot K}_t} = {I_t} - \delta {K_t}\] 
+  \begin{subparts}
+    \subpart 
+    a)  El progreso tecnológico es 2, la Elasticidad Producto – Capital per – cápita es igual a 0,55; la tasa de depreciación 0,9; la tasa de ahorro 0,4 y la tasa de crecimiento demográfica es 0,05. Encontrar el nivel de capital per – cápita de estado estacionario, la producción per – cápita. Grafique los resultados. 
+    \subpart 
+    Encuentre el capital per – cápita de oro y el nivel de producción per – cápita de oro, ¿El capital de estado estacionario es mayor o menor al capital de oro (per – cápita)? compare el resultado con el obtenido en el inciso a), respalde su resultado con un gráfico.
+    \subpart Si la tasa de ahorro aumenta hasta 0,5 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, la tasa de crecimiento del capital per – cápita, la tasa de crecimiento del producto per – cápita? Grafique y discuta los resultados.
+    \subpart Si la tasa de crecimiento demográfica aumenta hasta 0,06 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita y la tasa de crecimiento del capital per – cápita? Grafique los resultados.
+    \subpart Con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, capital per – cápita de oro y el nivel de producción per – cápita de oro (de los incisos a) y b)); encontrar el consumo per – cápita de estado estacionario y de oro.
+
+  \end{subparts}
+\end{parts}
+
+\begin{solution}
+  
+\end{solution}
+
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\miquestion
+\begin{parts}
+  \part El modelo AK viene dado por las siguientes ecuaciones:
+  \[{Y_t} = A{K_t}\]
+  \[{I_t} = {{\dot K}_t} + \delta {K_t}\]
+  \[{S_t} = {I_t}\]
+  \begin{subparts}
+    \subpart
+    Si el progreso tecnológico es 2, la tasa de ahorro es 20\%, la tasa de depreciación es del 18\% y la tasa demográfica es de 6\%. Encuentre la tasa de crecimiento del capital per – cápita y la tasa de crecimiento del producto per – cápita, realice una grafica
+    \subpart
+    Suponga que el nivel de capital per – cápita es de 150, encuentre la producción per – cápita, realice una grafica
+    \subpart
+    Si el ahorro disminuye a un 15\%, ¿Qué sucede con la tasa de crecimiento del capital y del producto per – cápita? Elabore gráficos para respaldar su respuesta 
+    \subpart
+    Si la tasa de depreciación cae a un 14\%, ¿Qué sucede con la tasa de crecimiento del capital y del producto per – cápita? Elabore gráficos para respaldar su respuesta
+
+  \end{subparts}
+\end{parts}
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\miquestion
+\begin{parts}
+    \part Considere el modelo de Solow del anterior ejercicio (I)
+        \begin{subparts}
+            \subpart    
+            Encuentre la velocidad de convergencia de este modelo. (Debe partir de la ecuación de acumulación de capital, luego aplicar la convergencia de Taylor):
+            
+            \subpart
+            Tome en cuenta que la elasticidad capital – producto per – cápita es 1/3, 0)  = 1, = 2, = 2\%, = 1\%  y = 3\%  (x  es  la  velocidad  de  crecimiento  de  la tecnología). Calcular cuántos años (t) tarda en llegar a la mitad.
+
+        \end{subparts}
+\end{parts}
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+\end{questions}
+\end{document}
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
