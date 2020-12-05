@@ -6,7 +6,7 @@
 
 %define the page header/title info
 \oxfordterm{Macroeconomics II}
-\course{Práctica 3 - Suaznabar Canaviri Peter Lando}
+\course{Práctica 3 - Cesar Ramos}
 \sheetnumber{1}
 \sheettitle{Crecimiento Económico} %can leave out if no title per sheet
 
@@ -128,9 +128,21 @@
     $$\Delta K_t = {I_t} - \delta {K_t} // \dfrac{1}{L_t}$$ 
     $$\dfrac{\Delta K_t}{L_t} = i_t - \delta {k_t}$$
     $$\dfrac{\Delta K_t}{K_t}*\dfrac{K_t}{L_t} = i_t - \delta {k_t}$$
-    Operamos el término
-    $$\dfrac{\Delta K_t}{L_t} = \dfrac{\Delta K_t}{-L_t^2}$$
+    Operamos el término siugiente:
+   
+    \[\begin{array}{l}
+\mathop {\left( {\frac{K}{{AL}}} \right)}\limits^ \bullet   = \frac{{\mathop K\limits^ \bullet  AL - K(\mathop {AL}\limits^ \bullet  )}}{{{{(AL)}^2}}} = \frac{{\mathop K\limits^ \bullet  AL}}{{{{(AL)}^2}}} - \frac{{K(\mathop {AL}\limits^ \bullet  )}}{{{{(AL)}^2}}} = \frac{{\mathop K\limits^ \bullet  }}{{AL}} - \frac{{K\mathop A\limits^ \bullet  L + KA\mathop L\limits^ \bullet  }}{{{{(AL)}^2}}}\\
+\mathop k\limits^ \bullet   = \frac{{\mathop K\limits^ \bullet  }}{{AL}} - \frac{{K\mathop A\limits^ \bullet  L}}{{{{(AL)}^2}}} + \frac{{KA\mathop L\limits^ \bullet  }}{{{{(AL)}^2}}}\\
+\mathop k\limits^ \bullet   = \frac{{\mathop K\limits^ \bullet  }}{{AL}} - \frac{{\mathop A\limits^ \bullet  }}{A}\frac{K}{{AL}} + \frac{{\mathop L\limits^ \bullet  }}{L}\frac{K}{{AL}}\\
+\mathop k\limits^ \bullet   = \frac{{\mathop K\limits^ \bullet  }}{{AL}} - a*k + n*k\\
+\frac{{\mathop K\limits^ \bullet  }}{{AL}} = \mathop k\limits^ \bullet   + a*k - n*k
+\end{array}\]
+     
+     $$\mathop k\limits^ \bullet   = s*f(k) - (n + a + \delta )*k$$
+        
     \medskip
+    
+    \newpage
     
     \begin{center}
         \textbf{Gráfico. Capital per cápita, depreciación y ahorro}
@@ -168,14 +180,60 @@
   \[{I_t} = {{\dot K}_t} + \delta {K_t}\] 
   \begin{subparts}
     \subpart Si el progreso tecnológico es 2, la Elasticidad Producto – Capital per – cápita es igual a 0,4; la tasa de depreciación 0,08; la tasa de ahorro 0,25 y la tasa de crecimiento de la población 0,04. Encontrar el nivel de capital per – cápita de estado estacionario, la producción per – cápita. Grafique los resultados.
+    
+     $$y_t = A*k_t^\alpha$$
+     
+     $$\mathop k\limits^ \bullet   = s*f(k) - (n + \delta )*k$$
+     
+     Reemplazando los datos tenemos:
+     
+     $$y_t = 2*k_t^{0.4}$$
+     
+     $$\mathop k \limits ^ \bullet   = 0.25*y_t - (0.04 + 0.8 )*k$$
+    
+    $$\mathop k \limits ^ \bullet   = 0.25*2*k_t^{0.4} - (0.04 + 0.8 )*k$$
+    
+    $$\mathop k \limits ^ \bullet   = 0.5*k_t^{0.4} - 0.84*k$$
+    
     \subpart 
     Encuentre el capital per – cápita de oro, compare el resultado con el obtenido en el inciso i), apóyese con un gráfico.
+    $$c^*=f(k^*)+(\delta + n)*k^*$$
+    $$\dfrac{dc^*}{dk^*}=f'(k^*)-(\delta +n)=0$$
+    $$k^{oro} = A\alpha k^{\alpha -1} = (\delta +n)$$
+    $$k^{oro} = (\dfrac{(\delta +n)}{A * \alpha})^{\dfrac{1}{\alpha - 1}}$$
     \subpart 
     Si la tasa de ahorro aumenta hasta 0,3 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, la tasa de crecimiento del capital per – cápita, la tasa de crecimiento del producto per – cápita? Grafique y discuta los resultados.
+    
+     $$\mathop k\limits^ \bullet   = s*f(k) - (n + \delta )*k // 1/k_t$$
+     
+     $$\dfrac{\mathop k\limits^ \bullet}{k} = s*k_t^{-0.6}-(n+\delta)=0$$
+     En estado estacionario la tasa de crecimiento del stock de capital es 0.
+     
+     $$\gamma _{\mathop k\limits^ \bullet}=0$$
+    
+    $$k_t^{-0.6}=\dfrac{(n+\delta)}{s}$$
+    
+    Reemplazando los datos:
+    $$k_t^{-0.6}=\dfrac{(0.08+0.04)}{0.3}$$
+    
+    $$k_t=0.04^{- \dfrac{1}{0.6}}$$
+    
     \subpart 
-    Si la tasa de depreciación cae hasta 0,6 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, la tasa de crecimiento del capital per – cápita y la tasa de crecimiento del producto per – cápita? Grafique los resultados
-    \subpart 
-    ¿Qué valor debería tomar la tasa de ahorro para que el nivel de capital per – cápita sea igual capital per – cápita de oro?
+    Si la tasa de depreciación cae hasta 0,06 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, la tasa de crecimiento del capital per – cápita y la tasa de crecimiento del producto per – cápita? Grafique los resultados
+    
+    $$k_t^{-0.6}=\dfrac{(0.04+0.06)}{s}$$
+    
+    $$k_t^{-0.6}=\dfrac{(0.1)}{0.4}$$
+    
+    $$k_t=0.25^{- \dfrac{1}{6}}$$
+    
+    
+    %\subpart 
+    %¿Qué valor debería tomar la tasa de ahorro para que el nivel de capital per – cápita sea igual capital per – cápita de oro?
+    
+    %$$k^{oro} = (\dfrac{(\delta +n)}{A * \alpha})^{\dfrac{1}{\alpha - 1}}$$
+    
+    
   \end{subparts}
 \end{parts}
 
@@ -194,11 +252,81 @@
   \begin{subparts}
     \subpart 
     a)  El progreso tecnológico es 2, la Elasticidad Producto – Capital per – cápita es igual a 0,55; la tasa de depreciación 0,9; la tasa de ahorro 0,4 y la tasa de crecimiento demográfica es 0,05. Encontrar el nivel de capital per – cápita de estado estacionario, la producción per – cápita. Grafique los resultados. 
+    
+    \textbf{Producción per cápita}
+    $$y_t = k_t^{\alpha}$$
+    
+    \textbf{Ley de moviemiento del capital}
+     $$\mathop k\limits^ \bullet   = s*f(k) - (n + \delta )*k $$
+     
+     \textbf{Tasa de crecimiento del Stock de capital}
+     
+     $$\dfrac{\mathop k\limits^ \bullet}{k} = s*k_t^{\alpha - 1}-(n+\delta)=0$$
+    
+    $$s*k_t^{\alpha - 1}=(n+\delta)$$
+    
+    $$k_t^{\alpha - 1}=\dfrac{n+\delta}{s}$$
+    
+    $$k_t^*=(\dfrac{n+\delta}{s})^{\dfrac{1}{\alpha - 1}}$$
+    
     \subpart 
     Encuentre el capital per – cápita de oro y el nivel de producción per – cápita de oro, ¿El capital de estado estacionario es mayor o menor al capital de oro (per – cápita)? compare el resultado con el obtenido en el inciso a), respalde su resultado con un gráfico.
+    
+    $$k_t^*=(\dfrac{0.05+0.9}{0.4})^{\dfrac{1}{0.55 - 1}}$$
+    
+    $$k_t=(\dfrac{0.95}{0.4})^{\dfrac{1}{-0.45 }}$$
+    
+    $$k_t=0,14$$
+
     \subpart Si la tasa de ahorro aumenta hasta 0,5 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, la tasa de crecimiento del capital per – cápita, la tasa de crecimiento del producto per – cápita? Grafique y discuta los resultados.
+    
+    $$k_t=(\dfrac{0.95}{0.4})^{\dfrac{1}{-0.45 }}$$
+    
+    $$k_t=0,24$$
+    %_________________________________________________
+    %*************************************************
+    \begin{tikzpicture}
+    %Axis
+    \draw[thick,<->] (0,10) node[above]{Depreciación, Ahorro}--(0,0)--(10,0) node[right]{$k$}; 
+    \node [below left] at (0,0) [$0$]; 
+    %Line 
+    \draw(0,0)--(9,9) node[right]{$\delta k$}; 
+    \draw(5,0)--(5,5) node[right]{$A$};
+    \draw(6.1,0)--(6.1,6.1) node[right]{$B$};
+    %Curve 
+    \draw(0,0) ..controls (1,5) and (5,6) .. (10,7) node[right]{$s'f(k)$};
+    \draw(0,0) ..controls (1,5) and (5,5) .. (10,6) node[right]{$sf(k)$};
+    \end{tikzpicture}
+    %*************************************************
+    %_________________________________________________
+    
     \subpart Si la tasa de crecimiento demográfica aumenta hasta 0,06 ¿Qué sucede con el nivel de capital per – cápita de estado estacionario, la producción per – cápita y la tasa de crecimiento del capital per – cápita? Grafique los resultados.
-    \subpart Con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, capital per – cápita de oro y el nivel de producción per – cápita de oro (de los incisos a) y b)); encontrar el consumo per – cápita de estado estacionario y de oro.
+    
+    $$k_t^*=(\dfrac{0.06+0.9}{0.4})^{\dfrac{1}{0.55 - 1}}$$
+    
+    $$k_t^*=0.1429$$
+    
+    %_________________________________________________
+    %*************************************************
+    \begin{tikzpicture}
+    %Axis
+    \draw[thick,<->] (0,10) node[above]{Depreciación, Ahorro}--(0,0)--(10,0) node[right]{$k$}; 
+    \node [below left] at (0,0) [$0$]; 
+    %Line 
+    \draw(0,0)--(9,9) node[right]{$(n + \delta) k$}; 
+    \draw(0,0)--(8,10) node[right]{$(n' + \delta ) k$}; 
+    
+    \draw(6.1,0)--(6.1,6.1) node[right]{$A$};
+    \draw(4.4,0)--(4.4,5.4) node[right]{$B$};
+    %Curve 
+    \draw(0,0) ..controls (1,5) and (5,6) .. (10,7) node[right]{$s*f(k)$};
+    %\draw(0,0) ..controls (1,5) and (5,5) .. (10,6) node[right]{$sf(k)$};
+    \end{tikzpicture}
+    %*************************************************
+    %_________________________________________________
+    
+    
+    %\subpart Con el nivel de capital per – cápita de estado estacionario, la producción per – cápita, capital per – cápita de oro y el nivel de producción per – cápita de oro (de los incisos a) y b)); encontrar el consumo per – cápita de estado estacionario y de oro.
 
   \end{subparts}
 \end{parts}
@@ -216,33 +344,69 @@
   \[{Y_t} = A{K_t}\]
   \[{I_t} = {{\dot K}_t} + \delta {K_t}\]
   \[{S_t} = {I_t}\]
+  
+  \textbf{Stock de capital de Oro}
+  
+  $$k^{oro} = (\dfrac{(\delta +n)}{A * \alpha})^{\dfrac{1}{\alpha - 1}}$$
+  
+     $$\mathop k\limits^ \bullet   = s*f(k) - (n + a + \delta )*k$$
+  
   \begin{subparts}
     \subpart
-    Si el progreso tecnológico es 2, la tasa de ahorro es 20\%, la tasa de depreciación es del 18\% y la tasa demográfica es de 6\%. Encuentre la tasa de crecimiento del capital per – cápita y la tasa de crecimiento del producto per – cápita, realice una grafica
+    Si el progreso tecnológico es 2, la tasa de ahorro es 20\%, la tasa de depreciación es del 18\% y la tasa demográfica es de 6\%. Encuentre la tasa de crecimiento del capital per – cápita y la tasa de crecimiento del producto per – cápita, realice una grafica.
+    
+    $$k^{oro} = (\dfrac{(0.18 +0.06)}{2  })$$
+    $$k^{oro} = 0.12$$
+    
     \subpart
     Suponga que el nivel de capital per – cápita es de 150, encuentre la producción per – cápita, realice una grafica
+    
+      \[{Y_t} = A{K_t}\]
+      $$y_t = A*k_t$$
+      $$y_t = 2*1.50$$
+      $$y_t = 3$$
+    
     \subpart
     Si el ahorro disminuye a un 15\%, ¿Qué sucede con la tasa de crecimiento del capital y del producto per – cápita? Elabore gráficos para respaldar su respuesta 
+    
+    \textbf{Tasa de crecimiento del Stock de Capital}
+    
+    
+    
+    $$\gamma _{\mathop k\limits^ \bullet}=0$$
+    
+    $$k_t=\dfrac{(n+\delta)}{A*s}$$
+    
+    $$k_t=\dfrac{(0.06+0.18)}{2*0.15}$$
+    
+    $$k_t= 0.8$$
+    
     \subpart
     Si la tasa de depreciación cae a un 14\%, ¿Qué sucede con la tasa de crecimiento del capital y del producto per – cápita? Elabore gráficos para respaldar su respuesta
+    
+    $$k_t=\dfrac{(n+\delta)}{A*s}$$
+    
+     $$k_t=\dfrac{(0.06+0.14)}{2*0.2}$$
+     
+     $$k_t=0.5$$
 
   \end{subparts}
 \end{parts}
 %--------------------------------------------------------------------%
 %--------------------------------------------------------------------%
 %--------------------------------------------------------------------%
-\miquestion
-\begin{parts}
-    \part Considere el modelo de Solow del anterior ejercicio (I)
-        \begin{subparts}
-            \subpart    
-            Encuentre la velocidad de convergencia de este modelo. (Debe partir de la ecuación de acumulación de capital, luego aplicar la convergencia de Taylor):
+%\miquestion
+%\begin{parts}
+%    \part Considere el modelo de Solow del anterior ejercicio (I)
+%        \begin{subparts}
+%            \subpart    
+%            Encuentre la velocidad de convergencia de este modelo. (Debe partir de la ecuación de acumulación de capital, luego aplicar la convergencia de Taylor):
             
-            \subpart
-            Tome en cuenta que la elasticidad capital – producto per – cápita es 1/3, 0)  = 1, = 2, = 2\%, = 1\%  y = 3\%  (x  es  la  velocidad  de  crecimiento  de  la tecnología). Calcular cuántos años (t) tarda en llegar a la mitad.
+%            \subpart
+ %           Tome en cuenta que la elasticidad capital – producto per – cápita es 1/3, 0)  = 1, = 2, = 2\%, = 1\%  y = 3\%  (x  es  la  velocidad  de  crecimiento  de  la tecnología). Calcular cuántos años (t) tarda en llegar a la mitad.
 
-        \end{subparts}
-\end{parts}
+ %       \end{subparts}
+%\end{parts}
 %--------------------------------------------------------------------%
 %--------------------------------------------------------------------%
 %--------------------------------------------------------------------%
